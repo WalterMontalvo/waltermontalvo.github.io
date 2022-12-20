@@ -1,40 +1,74 @@
-# Jekyll Starter
+# Jekyll Starter Tailwind
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
-> Starting point for Jekyll sites using [Tailwind CSS](https://tailwindcss.com/)
-and [Alpine.js](https://github.com/alpinejs/alpine/).
+A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https://jekyllrb.com/) that includes:
+* A barebones Jekyll starter theme
+* A Gulpfile that does the following:
 
-[![Use this template](https://img.shields.io/badge/template-Generate-green?style=for-the-badge)](https://github.com/mloberg/jekyll-starter/generate)
-[![Unlicense](https://img.shields.io/badge/license-Unlicense-blue?style=for-the-badge)](https://choosealicense.com/licenses/unlicense/)
+    * Compiles Tailwind
+    * Strips out unused CSS using Tailwind's `purge` option
+    * Runs [Autoprefixer](https://github.com/postcss/autoprefixer)
+    * Minifies your CSS
+    * Compiles Jekyll
+    * Runs [Browsersync](https://www.browsersync.io/) for local development
 
-## Getting Started
+## What is Tailwind?
+>"Tailwind is a utility-first CSS framework for rapidly building custom user interfaces."
+–[Tailwind](https://tailwindcss.com)
 
-You'll need [Ruby](https://www.ruby-lang.org/en/), [Bundler](https://bundler.io/),
-and [Node.js](https://nodejs.org/en/) installed. Then install build dependencies
-with
+## What is Jekyll?
+>"Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories."
+–[Jekyll](https://jekyllrb.com/)
 
-    npm install
+## Requirements
+* [Bundler](http://bundler.io/)
+* [Jekyll](https://jekyllrb.com/)
+* [Node.js](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
+* [Ruby](https://www.ruby-lang.org/en/)
 
-_Tip_: Be sure to commit the generated `package-lock.json` and `Gemfile.lock` files.
+## Get started
+* `bundle install` to install Ruby gems
+* `npm ci` to install npm packages listed in `package-lock.json`
+* `npm run start` or `npm run dev` to compile the site with development settings and run BrowserSync
 
-Then to build and serve the dev site, run
+## Build your site
+* `npm run build:dev` to compile the site with development settings
+* `npm run build:production` or `npm run build` to compile the site for production
 
-    npm start
 
-## What's Included
+## Deploy
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/jekyll-starter-tailwind)
 
-This is not a Jekyll theme. It's a starting point to create a website using
-[Jekyll](https://jekyllrb.com/), [Tailwind CSS](https://tailwindcss.com/), and
-[Alpine.js](https://github.com/alpinejs/alpine/). The layout includes almost
-nothing, allowing you to start building right away instead of having to remove
-code you won't use.
+Note: By default, Netlify uses `jekyll build` as the build command. The included `netlify.toml` file will override it to use `npm run build`.
 
-If you want to start creating posts and pages, we've included the
-[Jekyll::Compose](https://github.com/jekyll/jekyll-compose) plugin.
+## License
+[MIT](https://github.com/taylorbryant/jekyll-starter-tailwind/blob/master/LICENSE.md)
 
-    bundle exec jekyll page "My New Page"
-    bundle exec jekyll post "My New Post"
+## How you can help
+Enjoying Jekyll Starter Tailwind and want to help? You can:
+* [Create an issue](https://github.com/taylorbryant/jekyll-starter-tailwind/issues/new) with some constructive criticism
+* [Submit a pull request](https://github.com/taylorbryant/jekyll-starter-tailwind/compare) with some improvements to the project
 
-## Deploying
+## Contributors
 
-Includes configuration for deploying to [Netlify](https://www.netlify.com/) and
-[GitHub Pages](https://pages.github.com/) (via GitHub Actions).
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://phproberto.com"><img src="https://avatars0.githubusercontent.com/u/1119272?v=4" width="100px;" alt=""/><br /><sub><b>Roberto Segura</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=phproberto" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/benmp"><img src="https://avatars3.githubusercontent.com/u/9081154?v=4" width="100px;" alt=""/><br /><sub><b>benmp</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=benmp" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jd4no"><img src="https://avatars0.githubusercontent.com/u/15043675?v=4" width="100px;" alt=""/><br /><sub><b>Joey Defourneaux</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=jd4no" title="Code">💻</a></td>
+    <td align="center"><a href="https://shime.sh"><img src="https://avatars3.githubusercontent.com/u/703563?v=4" width="100px;" alt=""/><br /><sub><b>Hrvoje Šimić</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=shime" title="Code">💻</a></td>
+    <td align="center"><a href="https://alejof.dev"><img src="https://avatars2.githubusercontent.com/u/7116453?v=4" width="100px;" alt=""/><br /><sub><b>Alejandro Figueroa</b></sub></a><br /><a href="https://github.com/taylorbryant/jekyll-starter-tailwind/commits?author=alexphi" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

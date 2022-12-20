@@ -1,13 +1,15 @@
-title: Your awesome title
-description: My awesome site
-permalink: /:slugified_categories/:title/
-
-date_format: "%b %-d, %Y"
+title: Tailwind Jekyll Starter Kit
+description: A starter kit for using Tailwind with Jekyll
 
 exclude:
-  - "package*.json"
-  - "*.config.js"
-  - netlify.toml
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
   - README.md
-  - LICENSE
-  - Makefile
+  - src
+  - tailwind.config.js
+  - netlify.toml
