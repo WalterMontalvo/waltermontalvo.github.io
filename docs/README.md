@@ -51,3 +51,8 @@ baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a s
 Run your Jekyll site locally.
 
 ```$ bundle exec jekyll serve```
+
+## LaTeX in Jekyll (and *lots* of Data Science posts and goodies)
+
+Good link 
+https://github.com/ian-whitestone/ian-whitestone.github.io
