@@ -29,6 +29,8 @@ Math:
 \sqrt{3}
 ```
 
+This expression uses `\$` to display a dollar sign: $\sqrt{\$4}$
+
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
